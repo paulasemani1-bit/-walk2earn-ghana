@@ -1,1 +1,147 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walk2Earn Ghana - Walking Rewards App</title>
+  <meta name="description" content="Walking rewards app for Ghana">
+  
+  <!-- Vercel Web Analytics - Inject script -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    h1 {
+      color: #667eea;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+    }
+    
+    p {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 1.1em;
+    }
+    
+    .features {
+      text-align: left;
+      margin: 30px 0;
+    }
+    
+    .features h2 {
+      color: #764ba2;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+    
+    .features ul {
+      list-style: none;
+    }
+    
+    .features li {
+      padding: 10px 0;
+      color: #555;
+    }
+    
+    .features li:before {
+      content: "✓ ";
+      color: #667eea;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 15px 40px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+      margin-top: 20px;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    }
+    
+    .analytics-badge {
+      margin-top: 30px;
+      padding: 10px;
+      background: #f0f4ff;
+      border-radius: 6px;
+      font-size: 0.9em;
+      color: #667eea;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚶‍♂️ Walk2Earn Ghana</h1>
+    <p>Earn rewards while staying healthy! Turn your daily walks into valuable rewards in Ghana.</p>
+    
+    <div class="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Track your daily walking distance</li>
+        <li>Earn points for every kilometer walked</li>
+        <li>Redeem rewards from local partners</li>
+        <li>Join challenges with friends</li>
+        <li>Improve your health while earning</li>
+      </ul>
+    </div>
+    
+    <a href="#get-started" class="cta-button">Get Started</a>
+    
+    <div class="analytics-badge">
+      ✨ Powered by Vercel Web Analytics
+    </div>
+  </div>
+  
+  <script type="module">
+    // Track page view (automatically handled by Vercel Analytics)
+    console.log('Walk2Earn Ghana app loaded with Vercel Analytics');
+    
+    // Example: Track custom events when CTA button is clicked
+    document.querySelector('.cta-button').addEventListener('click', (e) => {
+      e.preventDefault();
+      // Track custom event using Vercel Analytics
+      if (window.va) {
+        window.va('event', { name: 'cta_clicked' });
+      }
+      alert('Welcome to Walk2Earn Ghana! 🎉');
+    });
+  </script>
+</body>
+</html>
